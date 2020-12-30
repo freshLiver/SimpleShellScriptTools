@@ -13,9 +13,9 @@ do
     # KB or MB
     if [ "$(echo $num'>'1024 | bc -l)" = "1" ]
     then
-        value="$(echo "$num 1024" | awk '{printf("%.2f", $1/$2)}' ) MiB/s"
+        value="$(echo "$num 1024" | awk '{printf("%6.2f MiB/s", $1/$2)}')"
     else
-        value="$num KiB/s"
+        value="$(echo $num | awk '{printf "%6.2f KiB/s", $0}')"
     fi
 
     # assign value to download or update
