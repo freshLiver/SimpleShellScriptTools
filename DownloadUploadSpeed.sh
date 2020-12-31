@@ -8,6 +8,9 @@ upload=""
 download=""
 value=""
 
+download_sym="▼"
+upload_sym="▲"
+
 for num in $raw 
 do
     # KB or MB
@@ -31,4 +34,4 @@ do
 
 done
 
-echo " ▼ $download | ▲ $upload "
+echo " $download_sym $download | $upload_sym $upload "
