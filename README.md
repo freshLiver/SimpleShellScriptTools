@@ -5,7 +5,7 @@ Some Simple Shell Srcipts For Linux
 Get Current CPU Temperature From `lm-sensors` 
 
 ### Requirements : 
-`lm-sensors` [Thanks For](https://askubuntu.com/questions/15832/how-do-i-get-the-cpu-temperature)
+`apt-get install lm-sensors`
 
 ## CPUUsage.sh
 Get Current CPU Usage(Percentage with this format : "%4.1f%") From `top` 
@@ -24,4 +24,4 @@ Get Total Download And Upload Speed(KiB/s or MiB/s with this format : "%6.2f ?iB
 You can change the download and upload symbol by changing `download_sym`, `upload_sym` in this script
 
 ### Requirements :
-`ifstat` [Thanks For](https://unix.stackexchange.com/questions/517352/get-current-download-speed-as-a-number)
+`apt-get install ifstat `
