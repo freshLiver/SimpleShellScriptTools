@@ -1,3 +1,5 @@
+interval=1
+
 stat=$(xset q | grep "00: C" | sed -r "s/ {2,}/ /g" | awk '{print $4, $8}')
 
 Caps_off="Ⓐ"
@@ -25,3 +27,5 @@ then
 else
     echo "XXXXXXXX"
 fi
+
+sleep $interval

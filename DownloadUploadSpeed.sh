@@ -35,3 +35,4 @@ do
 done
 
 echo " $download_sym $download | $upload_sym $upload "
+sleep 1

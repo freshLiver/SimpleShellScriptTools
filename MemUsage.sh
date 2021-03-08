@@ -12,7 +12,7 @@ then
 fi
 
 echo $(echo "$Used_MiB $Used_perc" | awk '{printf "%3.1f GiB (%3.1f %c)", $1/1024, $2*100, "%"}')
-
+sleep 5
 # echo $Used_MiB 
 # echo $Used_perc
 
