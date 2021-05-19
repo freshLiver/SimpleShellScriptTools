@@ -1,4 +1,5 @@
-interval=1
+# !bin/bash
+SleepTime_sec=${1:-5}
 
 stat=$(xset q | grep "00: C" | sed -r "s/ {2,}/ /g" | awk '{print $4, $8}')
 
@@ -28,4 +29,4 @@ else
     echo "XXXXXXXX"
 fi
 
-sleep $interval
+sleep $SleepTime_sec

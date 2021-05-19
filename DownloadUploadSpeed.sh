@@ -1,4 +1,5 @@
 # apt-get install ifstat
+SleepTime_sec=${1:-1}
 
 # get TOTAL field (row 3, last 2 columns) from ifstat
 raw=$(ifstat -T 1s 1 | awk 'NR==3 {print $(NF-1), $(NF)}')
@@ -35,4 +36,4 @@ do
 done
 
 echo " $download_sym $download | $upload_sym $upload "
-sleep 1
+sleep SleepTime_sec
